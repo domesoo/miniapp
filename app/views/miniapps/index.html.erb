@@ -1,0 +1,6 @@
+<div class="contents row" >
+  <% @blogs.each do |blog| %>
+<%= render partial: "miniapp", locals: { blog: blog } %>
+  <% end %>
+  <%= paginate(@blogs) %>
+</div>

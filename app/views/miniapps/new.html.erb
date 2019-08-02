@@ -1,0 +1,11 @@
+<div class="contents row">
+  <%= form_tag('/miniapps', method: :post) do %>
+<%# form forに変更する %>
+    <h3>
+      投稿する
+    </h3>
+    <input placeholder="Nickname" type="text" name="name">
+    <textarea cols="30" name="text" placeholder="text" rows="10"></textarea>
+    <input type="submit" value="SENT">
+  <% end %>
+</div>
